@@ -4,8 +4,6 @@ Machine learning project for predicting **Transit Timing Variations (TTV)** in e
 
 The objective is to identify whether an exoplanet exhibits variations in its transit timing (`ttv_flag`) based on its physical, orbital and stellar characteristics. Detecting these variations can provide indirect evidence of additional bodies in a planetary system that may not be directly observable.
 
-The project was developed as an academic Machine Learning project and compares a broad set of classification algorithms, with particular attention to preprocessing, model comparison, ROC analysis, Lift curves and sensitivity-driven threshold selection.
-
 ---
 
 ## Objective
@@ -173,60 +171,16 @@ A key result is that model selection based only on overall accuracy would not be
 
 ---
 
-## Technologies
-
-- R
-- caret
-- rpart
-- Random Forest
-- missForest
-- glmnet
-- Naive Bayes
-- PLS
-- Bagging
-- Gradient Boosting
-- AdaBoost
-- Neural Networks
-- pROC
-- ROCR
-
----
-
 ## Repository Structure
 
 ```text
 exoplanet-ttv-classification/
 ├── code/
 │   └── exoplanet_ttv_classification.R
+├── data/
+│   └── esopianeti.csv
 ├── docs/
 │   ├── Exoplanet_TTV_Machine_Learning_Report.pdf
-│   └── Exoplanet_TTV_Machine_Learning_Report.docx
 └── README.md
 ```
 
-The R script expects the project dataset at:
-
-```text
-data/esopianeti.csv
-```
-
-If the dataset is added to the repository, the recommended structure is:
-
-```text
-data/
-└── esopianeti.csv
-```
-
----
-
-## Report
-
-The complete project report is available here:
-
-[Read the project report](docs/Exoplanet_TTV_Machine_Learning_Report.pdf)
-
----
-
-## Authors
-
-Agostini · Gulizia · Miotti · Wu
